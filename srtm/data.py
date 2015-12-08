@@ -386,8 +386,8 @@ class GeoElevationFile:
 
         #mod_logging.debug('{0}, {1} -> {2}'.format(row, column, i))
 
-        byte_1 = ord(self.data[i * 2])
-        byte_2 = ord(self.data[i * 2 + 1])
+        byte_1 = self.data[i * 2]
+        byte_2 = self.data[i * 2 + 1]
 
         result = byte_1 * 256 + byte_2
 
